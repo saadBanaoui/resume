@@ -1,18 +1,19 @@
 <template>
 <div class="experiences">
-  <p>{{ msg }}</p>
+  <ul>
+    <li>test</li>
+  </ul>
 </div>
 </template>
 <script>
 export default {
   name: 'Experiences',
-  data () {
-    return {
-      msg: 'Welcome to my saas'
-    }
-  }
+  props: ['experiences']
 }
 </script>
 
-<style lang="css">
+<style scoped>
+h1, h2 {
+  font-weight: normal;
+}
 </style>

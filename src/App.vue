@@ -1,13 +1,22 @@
 <template>
   <div id="app">
+    <Brief></Brief>
     <img src="./assets/logo.png">
-    <router-view/>
+    <div>
+      <router-link :to="{ name: 'Experiences' }">Experiences</router-link>
+      <router-link to="/about">About</router-link>
+    </div>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
+import Brief from '@/components/brief'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Brief
+  }
 }
 </script>
 
