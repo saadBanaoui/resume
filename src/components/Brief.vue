@@ -8,11 +8,11 @@
   </div>
 </template>
 <script>
-  import EditImage from '@/components/edit-image'
-  export default {
-    name: 'Brief',
-    components: {
-      EditImage
-    }
+import EditImage from '@/components/Edit-image.vue'
+export default {
+  name: 'Brief',
+  components: {
+    EditImage
   }
+}
 </script>

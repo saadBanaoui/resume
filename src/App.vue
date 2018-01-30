@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <Brief></Brief>
-    <img src="./assets/logo.png">
     <div>
       <router-link :to="{ name: 'Experiences' }">Experiences</router-link>
       <router-link to="/about">About</router-link>
