@@ -40,7 +40,23 @@ module.exports = {
     // https://vue-loader.vuejs.org/en/options.html#cachebusting
     cacheBusting: true,
 
-    cssSourceMap: true
+    cssSourceMap: true,
+    module : {
+      loaders: [
+        {
+          test: /\.vue$/,
+          loader: 'vue'
+        }, {
+          test: /\.s[a|c]ss$/,
+          loader: 'style!css!sass'
+        }
+      ]
+    },
+    vue : {
+      loaders: {
+        scss: 'style!css!sass'
+      }
+    }
   },
 
   build: {

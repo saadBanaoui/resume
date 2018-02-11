@@ -2,8 +2,9 @@
   <div id="app">
     <Brief></Brief>
     <div>
-      <router-link :to="{ name: 'Experiences' }">Experiences</router-link>
+      <router-link to="/">Home</router-link>
       <router-link to="/about">About</router-link>
+      <router-link :to="{ name: 'Experiences' }">Experiences</router-link>
     </div>
     <router-view></router-view>
   </div>
